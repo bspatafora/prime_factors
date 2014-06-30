@@ -1,13 +1,1 @@
-<h1>Generate prime factors</h1>
-<%= form_tag(root_path, method: "get") do %>
-  <%= label_tag(:number, "Enter number:") %>
-  <%= text_field_tag(:number) %>
-  <%= submit_tag("Generate prime factors") %>
-<% end %>
-<p>
-  <% if @prime_factorer_presenter.error_message %>
-    <%= @prime_factorer_presenter.error_message %>
-  <% else %>
-    <%= @prime_factorer_presenter.prime_factors %>
-  <% end %>
-</p>
+

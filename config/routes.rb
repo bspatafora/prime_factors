@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'prime_factors#generate'
+  root 'prime_factors#form', as: :form
+  get 'generate' => 'prime_factors#generate'
+  get 'factors' => 'prime_factors#factors'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

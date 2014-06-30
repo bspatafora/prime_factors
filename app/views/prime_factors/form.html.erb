@@ -1,0 +1,9 @@
+<h1>Prime factors generator</h1>
+<% if flash[:alert] %>
+  <div><%= flash[:alert] %></div>
+<% end %>
+<%= form_tag(generate_path, method: "get") do %>
+  <%= label_tag(:number, "Enter number:") %>
+  <%= text_field_tag(:number) %>
+  <%= submit_tag("Generate prime factors") %>
+<% end %>
