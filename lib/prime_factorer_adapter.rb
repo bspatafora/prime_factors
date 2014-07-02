@@ -6,10 +6,9 @@ class PrimeFactorerAdapter
 
   def get_prime_factors
     if PrimeFactorerValidator.validate(@input)
-      presenter = PrimeFactorerPresenter.new(@input, PrimeFactorer)
-      @listener.input_valid(presenter)
+      @listener.input_was_valid(@input)
     else
-      @listener.input_invalid
+      @listener.input_was_invalid
     end
   end
 end

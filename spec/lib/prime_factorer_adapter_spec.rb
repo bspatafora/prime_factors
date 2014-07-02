@@ -6,7 +6,7 @@ describe PrimeFactorerAdapter do
         invalid_input = 'abc'
         adapter = PrimeFactorerAdapter.new(listener, invalid_input)
 
-        expect(listener).to receive(:input_invalid)
+        expect(listener).to receive(:input_was_invalid)
         adapter.get_prime_factors
       end
     end
@@ -17,7 +17,7 @@ describe PrimeFactorerAdapter do
         valid_input = '9'
         adapter = PrimeFactorerAdapter.new(listener, valid_input)
 
-        expect(listener).to receive(:input_valid)
+        expect(listener).to receive(:input_was_valid)
         adapter.get_prime_factors
       end
     end
