@@ -19,10 +19,10 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  title: 'Prime factors generator'
-  number_solicitation: 'Enter number:'
-  generate_button: 'Generate prime factors'
-  generate_more_link: 'Generate more prime factors'
-  invalid_input_alert: '“%{input}” is not valid input'
-  number_separator: ', '
+ex:
+  title: 'PRIME FACTORS GENERATOR :D'
+  number_solicitation: 'ENTER YOUR NUMBER MY FRIEND:'
+  generate_button: 'GENERATE!'
+  generate_more_link: 'DO IT ALL AGAIN'
+  invalid_input_alert: 'YOUR INPUT WHICH WAS “%{input}” WAS ALL WRONG COME ON MY FRIEND'
+  number_separator: ' ;) '

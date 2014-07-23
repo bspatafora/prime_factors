@@ -1,9 +1,11 @@
-<h1>Prime factors generator</h1>
+<%= render 'header' %>
+
 <% if flash[:alert] %>
   <div><%= flash[:alert] %></div>
 <% end %>
+
 <%= form_tag(generate_path, method: "get") do %>
-  <%= label_tag(:number, "Enter number:") %>
+  <%= label_tag(:number, t(:number_solicitation)) %>
   <%= text_field_tag(:number) %>
-  <%= submit_tag("Generate prime factors") %>
+  <%= submit_tag t(:generate_button) %>
 <% end %>

@@ -4,13 +4,13 @@ class PrimeFactorsController < ApplicationController
     adapter.get_prime_factors
   end
 
-  def input_was_valid(input)
-    @presenter = PrimeFactorerPresenter.new(input, PrimeFactorer)
+  def input_was_valid(factors)
+    @factors = factors
     render :factors
   end
 
-  def input_was_invalid
-    flash.now[:alert] = 'Input is invalid'
+  def input_was_invalid(input)
+    flash.now[:alert] = t(:invalid_input_alert, input: input)
     render :form
   end
 end
