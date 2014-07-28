@@ -7,5 +7,6 @@
 <%= form_tag(generate_path, method: "get") do %>
   <%= label_tag(:number, t(:number_solicitation)) %>
   <%= text_field_tag(:number) %>
+  <%= hidden_field_tag(:locale, I18n.locale) %>
   <%= submit_tag t(:generate_button) %>
 <% end %>
